@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newTable.css">
+    <title>Dummy Datatable for sysserve</title>
+</head>
+<body>
+    <h1>DataTable Project for sysserve.com</h1>
+    <h4>by Alexander Oweka</h4>
+    <table>
+        <tr>
+            <td>
+                <!-- html form for CRUD operations (add, delete & remove)-->
+                <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" required name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" required name="lastName" id="lastName">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="number" required name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div>
+                        <label>Email Address</label>
+                        <input type="email" required name="emailAddress" id="emailAddress">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <div id="searchBox">
+                    <input type="search" id="searchInp" placeholder="search..." value="random rubbish">
+                </div>
+                
+                <!-- table to list records-->
+                <table class="list" id="candidateList">
+                    <thead>
+                        <tr>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Phone Number</td>
+                            <td>Email Address</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="newTable.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* body {
+    background-color:darkslategray
+} */
+
+body > table {
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.list {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #a8979785;
+    padding: 8px;
+    text-align: left;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input[type=search] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 8px 0px;
+    padding: 12px 20px;
+}
+
+input[type=submit] {
+    background-color: rgba(18, 235, 65, 0.678);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    padding: 4px
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: wavy;
+    color: #094a94fa;
+    margin-right: 4px;
+}
